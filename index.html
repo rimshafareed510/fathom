@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimsha Fareed | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="logo">rimsha<span class="accent">.</span>dev</span>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+
+    <div class="hero">
+      <p class="hero-eyebrow">&gt; whoami</p>
+      <h2 class="hero-name">Rimsha Fareed</h2>
+      <p class="hero-subtitle">CS student who loves building clean interfaces, solving problems, and turning coffee into code — one line at a time.</p>
+      <img class="hero-avatar" src="images/profile.jpg" alt="Portrait of Rimsha Fareed">
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <p class="section-label">01 — About</p>
+      <h3>A little about me</h3>
+      <p class="bio">
+        I'm a Computer Science student with a passion for web development, AI, and problem-solving. Currently exploring front-end development and building projects that challenge me to think critically and design with purpose. I love learning new technologies, contributing to open-source, and creating digital experiences that are both functional and beautiful. When I'm not coding, I enjoy reading tech blogs, sketching UI mockups, and playing strategy games.
+      </p>
+    </section>
+
+    <section id="skills">
+      <p class="section-label">02 — Skills</p>
+      <h3>What I work with</h3>
+      <div class="skills-container">
+        <div class="skill-card">
+          <span class="skill-icon">🧱</span>
+          <h4>HTML5</h4>
+          <p>Semantic, accessible markup that makes sense without a stylesheet.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <h4>CSS3</h4>
+          <p>Flexbox, Grid, and animations that don't fight the layout.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <h4>JavaScript</h4>
+          <p>DOM manipulation, events, and fetching data from real APIs.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🔧</span>
+          <h4>Git &amp; GitHub</h4>
+          <p>Version control, branching, and shipping code with a paper trail.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🐍</span>
+          <h4>Python</h4>
+          <p>Data structures, algorithms, and building command-line applications.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🤖</span>
+          <h4>AI &amp; ML</h4>
+          <p>Exploring machine learning concepts, data analysis, and AI applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section-label">03 — Projects</p>
+      <h3>Things I've built</h3>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <p class="description">A console-based Python application to store and manage student records using lists and dictionaries.</p>
+        </div>
+        <div class="project-card">
+          <h3>Daily Digest CLI</h3>
+          <p class="description">A command-line tool that fetches random cat facts from an API and saves daily reports.</p>
+        </div>
+        <div class="project-card">
+          <h3>This Portfolio</h3>
+          <p class="description">Hand-crafted with semantic HTML, custom CSS with dark mode, and two live API integrations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="api-demo">
+      <p class="section-label">04 — Live Data</p>
+      <h3>Pulled from the internet, just now</h3>
+      <div class="api-container">
+        <div class="api-card">
+          <h4>Random dev joke</h4>
+          <p id="joke-output" class="api-output">Click the button to load one.</p>
+          <button id="joke-btn" class="btn">Get a joke</button>
+        </div>
+        <div class="api-card">
+          <h4>Something to do</h4>
+          <p id="activity-output" class="api-output">Click the button for an idea.</p>
+          <button id="activity-btn" class="btn">Get an activity</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <p class="section-label">05 — Contact</p>
+    <h3>Say hello</h3>
+    <form id="contact-form" class="contact-form">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+
+    <p class="footer-meta">&copy; 2026 Rimsha Fareed. Built line by line, no template.</p>
+    <a class="footer-email" href="mailto:rimsha.fareed@example.com">rimsha.fareed@example.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
