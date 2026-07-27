@@ -24,6 +24,12 @@ Whether analyzing university grant guidelines, student visa work-hour limits, re
 
 ---
 
+## 🌐 Live Demo
+
+https://fathomapp.vercel.app
+
+---
+
 ## ✨ Features
 
 - 📄 **Multi-Source Document Input**: Upload PDF or TXT files, paste direct web URLs, or enter raw policy text.
