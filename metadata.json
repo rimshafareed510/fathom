@@ -1,0 +1,8 @@
+{
+  "name": "Fathom",
+  "description": "AI-powered policy document analyzer featuring automatic risk \u0026 deadline detection, citation heatmaps, grounded Q\u0026A, interactive eligibility checker, and AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
