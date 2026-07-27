@@ -132,26 +132,26 @@ export default function App() {
         {/* View Switcher Routing */}
         {activeTab === 'dashboard' && (
           <div className="space-y-8">
-            {/* 1. RISK & WARNING PANEL (Displayed near top of dashboard as requested) */}
-            <RiskWarningPanel
-              risks={currentPolicy.risks}
-              onGoToSource={handleGoToSource}
-            />
-
-            {/* 2. CITATION HEATMAP PANEL */}
-            <CitationHeatmap
-              paragraphs={currentPolicy.paragraphs}
-              onSelectParagraph={handleGoToSource}
-            />
-
-            {/* 3. AI INSIGHTS PANEL */}
+            {/* 1. AI INSIGHTS DASHBOARD */}
             <AIInsightsPanel
               insights={currentPolicy.insights}
               risks={currentPolicy.risks}
               onGoToSource={handleGoToSource}
             />
 
-            {/* 4. GROUNDED CHAT & ELIGIBILITY CHECKER GRID */}
+            {/* 2. RISK & WARNING PANEL */}
+            <RiskWarningPanel
+              risks={currentPolicy.risks}
+              onGoToSource={handleGoToSource}
+            />
+
+            {/* 3. CITATION HEATMAP PANEL */}
+            <CitationHeatmap
+              paragraphs={currentPolicy.paragraphs}
+              onSelectParagraph={handleGoToSource}
+            />
+
+            {/* 4. GROUNDED AI CHAT & 5. ELIGIBILITY CHECKER */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <GroundedChat
                 key={`chat-grid-${currentPolicy.id}`}
@@ -169,7 +169,7 @@ export default function App() {
               />
             </div>
 
-            {/* 5. DOCUMENT VIEWER */}
+            {/* 6. DOCUMENT CLAUSES */}
             <DocumentViewer
               title={currentPolicy.title}
               category={currentPolicy.category}
