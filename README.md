@@ -26,7 +26,7 @@ Whether analyzing university grant guidelines, student visa work-hour limits, re
 
 ## 🌐 Live Demo
 
-https://your-vercel-app.vercel.app
+https://fathomapp.vercel.app
 
 ---
 
